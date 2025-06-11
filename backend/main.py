@@ -1,9 +1,10 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from pathlib import Path
 import json
 from typing import List
 
-from models import Question, AnswerSubmission, QuizResult
+from .models import Question, AnswerSubmission, QuizResult
 
 app = FastAPI()
 
@@ -15,8 +16,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+BASE_DIR = Path(__file__).resolve().parent
+
 # Load questions from JSON file
-with open('questions.json') as f:
+with open(BASE_DIR / 'questions.json') as f:
     questions_data = json.load(f)
 
 QUESTIONS = [Question(**q) for q in questions_data]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "text": "What is the capital of France?",
+    "options": ["Berlin", "London", "Paris", "Rome"],
+    "correct_answer": 2
+  },
+  {
+    "id": 2,
+    "text": "Which planet is known as the Red Planet?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correct_answer": 1
+  },
+  {
+    "id": 3,
+    "text": "Who wrote 'To Kill a Mockingbird'?",
+    "options": ["Harper Lee", "Mark Twain", "Jane Austen", "Charles Dickens"],
+    "correct_answer": 0
+  }
+]

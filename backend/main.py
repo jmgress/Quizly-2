@@ -4,7 +4,7 @@ from pathlib import Path
 import json
 from typing import List
 
-from .models import Question, AnswerSubmission, QuizResult
+from models import Question, AnswerSubmission, QuizResult
 
 app = FastAPI()
 
